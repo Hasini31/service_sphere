@@ -10,9 +10,7 @@ import {
   Package, 
   Bell, 
   LogOut,
-  Settings,
   ChevronDown,
-  Wrench,
   BarChart3,
   AlertTriangle,
   CreditCard
@@ -23,7 +21,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
@@ -107,15 +104,6 @@ export function VendorSidebar({ profile }: VendorSidebarProps) {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-56">
-            <DropdownMenuItem className="gap-2">
-              <Wrench className="h-4 w-4" />
-              <span>Vendor Profile</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem className="gap-2">
-              <Settings className="h-4 w-4" />
-              <span>Settings</span>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
             <DropdownMenuItem className="gap-2 text-destructive" onClick={handleLogout}>
               <LogOut className="h-4 w-4" />
               <span>Log out</span>
