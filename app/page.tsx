@@ -63,8 +63,8 @@ export default function HomePage() {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 glass">
-        <div className="container mx-auto flex h-16 items-center justify-between px-4">
-          <Link href="/" className="flex items-center gap-2">
+        <div className="container mx-auto flex h-16 items-center justify-center px-4 relative">
+          <Link href="/" className="flex items-center gap-2 absolute left-4">
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary">
               <Shield className="h-5 w-5 text-primary-foreground" />
             </div>
@@ -80,7 +80,7 @@ export default function HomePage() {
             </Link>
           </div>
           
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 absolute right-4">
           </div>
         </div>
       </nav>

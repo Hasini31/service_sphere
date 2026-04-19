@@ -10,9 +10,7 @@ import {
   Search, 
   Bell, 
   LogOut,
-  Settings,
   ChevronDown,
-  Building2
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -100,15 +98,6 @@ export function ClientSidebar({ profile }: ClientSidebarProps) {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-56">
-            <DropdownMenuItem className="gap-2">
-              <Building2 className="h-4 w-4" />
-              <span>Company Profile</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem className="gap-2">
-              <Settings className="h-4 w-4" />
-              <span>Settings</span>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
             <DropdownMenuItem className="gap-2 text-destructive" onClick={handleLogout}>
               <LogOut className="h-4 w-4" />
               <span>Log out</span>
